@@ -53,9 +53,7 @@ use App\Http\Controllers\BooksController;
 use App\Http\Controllers\PagesController;
 
 //Redirect
-Route::get('/', function () {
-    return redirect('/barangay/home');
-});
+Route::get('/', [UserController::class, 'login']);
 
 
 //Admin Panel Start
