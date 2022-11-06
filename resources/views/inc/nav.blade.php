@@ -51,7 +51,7 @@
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Unemployment</a>
                                         <a href="/certificate_residency"
                                         class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_residency*') ? 'active-page' : '' }}"><i
-                                            class="fa fa-address-card fa-lg icon-adjust"></i>New Cert</a>
+                                            class="fa fa-address-card fa-lg icon-adjust"></i>New Certificate</a>
                         </div>
 
 
