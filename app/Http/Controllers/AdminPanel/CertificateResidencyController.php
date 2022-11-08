@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 use App\Models\Certificate_Residency;
 use Illuminate\Http\Request;
+use PDF;
 
 
 class CertificateResidencyController extends Controller
@@ -64,5 +65,15 @@ class CertificateResidencyController extends Controller
     return redirect("certificate_residency")->with('status', 'Record Updated Successfully!');
 
  }
+
+    public function downloadFile($id){
+         $certificate_residencies = Certificate_Residency::find($id);
+        //  dd($certificate_residencies);
+         $pdf = PDF::loadView('pdf.certificate_residencies',[
+        'certificate_residencies' => $certificate_residencies
+          ]);
+        return $pdf->download("Certificate of Residency.pdf");
+    }
+    
 
 }

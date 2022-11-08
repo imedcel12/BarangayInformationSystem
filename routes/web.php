@@ -10,7 +10,9 @@ use App\Http\Controllers\AdminPanel\DashboardController;
 use App\Http\Controllers\AdminPanel\Senior_CitizenController;
 //Resident Module
 use App\Http\Controllers\AdminPanel\ResidentInfoController;
-//Blotter Module
+//Indigent Module
+use App\Http\Controllers\AdminPanel\CertificateIndigencyController;
+
 use App\Http\Controllers\AdminPanel\BlotterController;
 use App\Http\Controllers\AdminPanel\CertificateClearanceController;
 //Setttlement Module
@@ -145,16 +147,25 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
 
     //   PDF
 
-    Route::get("/export_certificate_clearances/{id}", [CertificateClearanceController::class, 'downloadFile']);
+    Route::get("/export_certificate_clearances/{id}", [CertificateClearanceController::class, 'downloadFile'])->name('certificate_clearances');
+    Route::get("/export_certificate_residencies/{id}", [CertificateResidencyController::class, 'downloadFile'])->name('certificate_residencies');
+    Route::get("/export_certificate_indigencies/{id}", [CertificateIndigencyController::class, 'downloadFile'])->name('certificate_indigencies');
 
 
-      //Certificate Clearance 2
+      //Certificate Residency
       Route::get("/certificate_residency", [CertificateResidencyController::class, 'index']);
       Route::post("/create_certificate_residencies", [CertificateResidencyController::class, 'store']);
       Route::get("/delete_certificate_residencies/{id}", [CertificateResidencyController::class, 'destroy']);
       Route::get("/edit_certificate_residencies/{id}", [CertificateResidencyController::class, 'edit']);
       Route::put("/update_certificate_residencies/{id}", [CertificateResidencyController::class, 'update']);
 
+
+          //Certificate Indigency
+          Route::get("/certificate_indigency", [CertificateIndigencyController::class, 'index']);
+          Route::post("/create_certificate_indigencies", [CertificateIndigencyController::class, 'store']);
+          Route::get("/delete_certificate_indigencies/{id}", [CertificateIndigencyController::class, 'destroy']);
+          Route::get("/edit_certificate_indigencies/{id}", [CertificateIndigencyController::class, 'edit']);
+          Route::put("/update_certificate_indigencies/{id}", [CertificateIndigencyController::class, 'update']);
 
 //Admin Panel End
 

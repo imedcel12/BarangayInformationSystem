@@ -84,7 +84,9 @@
 
                 @foreach ( $certificate_residencies as $item )
                     <tr class="text-dark">
-                        <td><button class="btn btn-sm btn-info">Print</button></td>
+                      <td><button class="btn btn-sm btn-info">
+                        <a href="{{url('export_certificate_residencies/'.$item->id)}}" class="btn btn-sm text-light">Print</a>
+                    </button></td>
                         <td>{{$item->name}}</td>
                         <td>{{$item->residency_status}}</td>
                         <td>{{$item->barangay}}</td>

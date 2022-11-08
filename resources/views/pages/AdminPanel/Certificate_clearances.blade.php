@@ -94,7 +94,7 @@
                 @foreach ( $certificate_clearances as $item )
                     <tr class="text-dark">
                         <td><button class="btn btn-sm btn-info">
-                            <a href="{{url('export_certificate_clearances/'.$item->id)}}" class="btn btn-warning btn-sm text-light">Print</a>
+                            <a href="{{url('export_certificate_clearances/'.$item->id)}}" class="btn btn-sm text-light">Print</a>
                         </button></td>
                         <td>{{$item->name}}</td>
                         <td>{{$item->purok_address}}</td>
