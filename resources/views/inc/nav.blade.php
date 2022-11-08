@@ -42,8 +42,8 @@
                                     class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_residency*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Residency</a>
 
-                                    <a href="/certificate_residency"
-                                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_residency*') ? 'active-page' : '' }}"><i
+                                    <a href="/certificate_indigency"
+                                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_indigency*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Indigency</a>
 
                                     <a href="/certificate_residency"
