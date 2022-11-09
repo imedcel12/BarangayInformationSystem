@@ -64,7 +64,7 @@
 
 <div class="container">
     <div class="col-md-12">
-        <h1 class="mt-1">Senior Citizen</h1>
+        <h1 class="mt-1" style="font-weight: 400">Senior Citizen</h1>
         <hr>
         <table class="table table-striped table">
             <thead class="bg-secondary text-center">
