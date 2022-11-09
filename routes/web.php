@@ -14,6 +14,8 @@ use App\Http\Controllers\AdminPanel\ResidentInfoController;
 use App\Http\Controllers\AdminPanel\CertificateIndigencyController;
 //Business Module
 use App\Http\Controllers\AdminPanel\CertificateBusinessController;
+//Unemployment Module
+use App\Http\Controllers\AdminPanel\CertificateUnemploymentController;
 
 use App\Http\Controllers\AdminPanel\BlotterController;
 use App\Http\Controllers\AdminPanel\CertificateClearanceController;
@@ -153,6 +155,7 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
     Route::get("/export_certificate_residencies/{id}", [CertificateResidencyController::class, 'downloadFile'])->name('certificate_residencies');
     Route::get("/export_certificate_indigencies/{id}", [CertificateIndigencyController::class, 'downloadFile'])->name('certificate_indigencies');
     Route::get("/export_certificate_businesses/{id}", [CertificateBusinessController::class, 'downloadFile'])->name('certificate_businesses');
+    Route::get("/export_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'downloadFile'])->name('certificate_unemployments');
 
       //Certificate Residency
       Route::get("/certificate_residency", [CertificateResidencyController::class, 'index']);
@@ -176,7 +179,15 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
     Route::get("/delete_certificate_businesses/{id}", [CertificateBusinessController::class, 'destroy']);
     Route::get("/edit_certificate_businesses/{id}", [CertificateBusinessController::class, 'edit']);
     Route::put("/update_certificate_businesses/{id}", [CertificateBusinessController::class, 'update']);
-//Admin Panel End
+
+
+     //Certificate Business
+     Route::get("/certificate_unemployment", [CertificateUnemploymentController::class, 'index']);
+     Route::post("/create_certificate_unemployments", [CertificateUnemploymentController::class, 'store']);
+     Route::get("/delete_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'destroy']);
+     Route::get("/edit_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'edit']);
+     Route::put("/update_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'update']);
+    //Admin Panel End
 
 
 // Client Side Start
