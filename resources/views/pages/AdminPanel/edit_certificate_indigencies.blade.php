@@ -9,7 +9,7 @@
 
 <div class="card shadow-md p-5" style="position: relative; top: 100px;">
 <div class="card-header text-center">
-    <h1 style="font-size: 20px; font-weight: 500">Show {{$certificate_indigencies->name}}</h1>
+    <h1 style="font-size: 20px; font-weight: 500">Edit Certificate of Indency of {{$certificate_indigencies->name}}</h1>
 </div>
  <div class="container mx-auto">
     <div class="row">
