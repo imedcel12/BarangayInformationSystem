@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <style>
-        #container{
+        #container {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        #sidebar{
+
+        #sidebar {
             width: 20%;
         }
-        #main{
+
+        #main {
             width: 80%;
         }
-        #text{
+
+        #text {
             color: blue;
         }
     </style>
 </head>
+
 <body>
 
     <div id="container">
@@ -47,7 +52,7 @@
             <h1>
                 <strong>BARANGAY OFFICIALS</strong>
             </h1>
-                <h5>
+            <h5>
                 <ul>
                     <li>
                         <h5>HON. EUNICE A. ANDOY</h5>
@@ -64,23 +69,23 @@
                     </li>
                     <li>
                         <h5>HON. DANTE S. PALWA</h5>
-                            <div id="title">Barangay Kagawad</div>
+                        <div id="title">Barangay Kagawad</div>
                     </li>
                     <li>
                         <h5>HON. ZENAIDA P. MORENO</h5>
-                             <div id="title">Barangay Kagawad</div>
+                        <div id="title">Barangay Kagawad</div>
                     </li>
                     <li>
                         <h5>HON. LUCAS B. MAGSUBAR</h5>
-                            <div id="title">Barangay Kagawad</div>
+                        <div id="title">Barangay Kagawad</div>
                     </li>
                     <li>
                         <h5>HON. CORAZON J. CABALGADA</h5>
-                                <div id="title">Barangay Kagawad</div>
+                        <div id="title">Barangay Kagawad</div>
                     </li>
                     <li>
                         <h5>HON. FELIX C. RULOMA</h5>
-                            <div id="title">Barangay Kagawad</div>
+                        <div id="title">Barangay Kagawad</div>
                     </li>
                     <li>
                         <h5>HON. REYMON L. LAPIZ</h5>
@@ -100,9 +105,11 @@
         <div id="main">
             <h1>TO WHOM IT MAY CONCERN</h1>
             <p>
-                THIS IS TO CERTIFY THAT MA. MELODY L. CENITA, married and a resident of Barangay Banlasan, Tubigon, Bohol
+                THIS IS TO CERTIFY THAT MA. MELODY L. CENITA, married and a resident of Barangay Banlasan, Tubigon,
+                Bohol
                 This is to certify further that they are residing at purok 3 in this barangay.
-                This certification is being issued upon the request of the above-mentioned name for whatever legal purpose it may serve her best.
+                This certification is being issued upon the request of the above-mentioned name for whatever legal
+                purpose it may serve her best.
                 Issued this 7th day of October, 2022 at Banlasan, Tubigon, Bohol, Philippines.
             </p>
 
@@ -110,13 +117,14 @@
             <p>EUNICE A. ANDOY</p>
             <p>PUNONG BARANGAY</p>
             <div id="note">
-                Note This certification is validated with an official seal and does not have an alteration. In case of alteration, it is countersigned by the issuing officer.
+                Note This certification is validated with an official seal and does not have an alteration. In case of
+                alteration, it is countersigned by the issuing officer.
             </div>
             <h6>Official seal</h6>
         </div>
     </div>
 
 
-
 </body>
+
 </html>
