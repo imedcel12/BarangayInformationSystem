@@ -12,18 +12,16 @@
             padding: 0;
         }
 
-        .container {
-            margin: 0 auto;
-            padding: 0;
-            border: 1px solid black;
+        .header {
+            margin-top: 20px;
         }
 
         .sidebar {
             width: 35%;
             height: 75%;
             position: absolute;
-            top: 150px;
-            left: 0;
+            top: 180px;
+            left: 5px;
             margin: 0 auto;
             padding: 0;
             border: 0;
@@ -36,11 +34,10 @@
             width: 60%;
             height: 75%;
             position: absolute;
-            top: 150px;
+            top: 280px;
             right: 0;
             margin: 0 auto;
             padding: 10px;
-            background: red;
         }
 
         h4 {
@@ -49,11 +46,8 @@
         }
 
         .title {
-            margin-top: 20px;
-            margin-left: 20px;
-            width: 90%;
+            margin: 20px;
             text-align: center;
-            background: red;
             margin: auto 0;
             text-align: center;
         }
@@ -69,6 +63,43 @@
         .li-margin {
             margin-top: 20px;
         }
+
+        .main-para {
+            margin-top: 20px;
+            text-indent: 2em
+        }
+
+        .main-footer h5 {
+            margin-top: 20px;
+            text-indent: 15em;
+        }
+
+        .main-footer p {
+            text-indent: 17em;
+        }
+
+        .main-footer p:first-child {
+            margin-top: 20px;
+        }
+
+        .main-footer p:last-child {
+            margin-bottom: 40px;
+        }
+
+        #note {
+            margin-top: 40px;
+            font-style: italic;
+            font-weight: lighter;
+            margin: 10px 0px 10px 0px;
+        }
+
+
+
+        .seal {
+            margin-top: 40px;
+            text-indent: 25.5em;
+            font-weight: 500;
+        }
     </style>
 </head>
 
@@ -81,9 +112,8 @@
             <h4>BARANGAY BANLASAN</h4>
         </div>
         <div class="title">
-            <h3>OFFICE OF THE PUNONG BARANGAY</h3>
-            <hr>
-            <h3>CERTIFICATE OF INDIGENCY</h3>
+            <h2>OFFICE OF THE PUNONG BARANGAY</h2>
+            <h2>CERTIFICATE OF INDIGENCY</h2>
         </div>
     </div>
     <div class="container">
@@ -148,24 +178,33 @@
 
         </div>
         <div class="main">
-            <h1>TO WHOM IT MAY CONCERN</h1>
-            <p>
+            <div class="main-title">TO WHOM IT MAY CONCERN: </div>
+            <p class="main-para">
                 THIS IS TO CERTIFY THAT MA. MELODY L. CENITA, married and a resident of Barangay Banlasan, Tubigon,
-                Bohol
-                This is to certify further that they are residing at purok 3 in this barangay.
-                This certification is being issued upon the request of the above-mentioned name for whatever legal
-                purpose it may serve her best.
-                Issued this 7th day of October, 2022 at Banlasan, Tubigon, Bohol, Philippines.
+                Bohol.
             </p>
+            <p class="main-para">
 
-            <h5>Certified by:</h5>
-            <p>EUNICE A. ANDOY</p>
-            <p>PUNONG BARANGAY</p>
-            <div id="note">
-                Note This certification is validated with an official seal and does not have an alteration. In case of
+                This is to certify further that he was brought to Tubigon Community Hospital on October 29, 2022 due to
+                hypertension and had a balance fee, as per barangay records, they are one of the indigent families in
+                our barangay.
+            </p>
+            <p class="main-para">
+                This certification is being issued upon the request of the aboved-mention name for whatever legal
+                purpose it may serve his best.
+                Issued this 3rd day of November, 2022 at Banlasan, Tubigon,Bohol , Philippines.
+
+            </p>
+            <div class="main-footer">
+                <h5>Certified by:</h5>
+                <p>EUNICE A. ANDOY</p>
+                <p>PUNONG BARANGAY</p>
+            </div>
+            <div id="note" class="note">
+                Note: This certification is validated with an official seal and does not have an alteration. In case of
                 alteration, it is countersigned by the issuing officer.
             </div>
-            <h6>Official seal</h6>
+            <h6 class="seal">Official seal</h6>
         </div>
     </div>
     </div>
