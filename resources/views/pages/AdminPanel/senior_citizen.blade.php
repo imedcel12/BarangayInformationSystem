@@ -5,7 +5,7 @@
 <div class="d-flex justify-content-end mt-2">
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Create
+   + Create
   </button>
 
   <form method="post" action="{{url('create_senior_citizen')}}">
@@ -62,18 +62,18 @@
   </div>
 </div>
 
-<div class="container">
+<div class="">
     <div class="col-md-12">
         <h1 class="mt-1" style="font-weight: 400">Senior Citizen</h1>
         <hr>
         <table class="table table-striped table">
-            <thead class="bg-secondary text-center">
+            <thead class="text-center" style="background-color: dimgray;">
                 <tr class="text-light">
                     <th>Status</th>
                     <th>Name</th>
                     <th>Purok</th>
                     <th>Street</th>
-                    <th>Tools</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody class="text-center">

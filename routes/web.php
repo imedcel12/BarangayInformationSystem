@@ -18,6 +18,8 @@ use App\Http\Controllers\AdminPanel\CertificateBusinessController;
 use App\Http\Controllers\AdminPanel\CertificateUnemploymentController;
 //Unifast Module
 use App\Http\Controllers\AdminPanel\CertificateUnifastController;
+//Job Seeker Module
+use App\Http\Controllers\AdminPanel\CertificateJobSeekerController;
 
 use App\Http\Controllers\AdminPanel\BlotterController;
 use App\Http\Controllers\AdminPanel\CertificateClearanceController;
@@ -159,6 +161,7 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
     Route::get("/export_certificate_businesses/{id}", [CertificateBusinessController::class, 'downloadFile'])->name('certificate_businesses');
     Route::get("/export_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'downloadFile'])->name('certificate_unemployments');
     Route::get("/export_certificate_unifasts/{id}", [CertificateUnifastController::class, 'downloadFile'])->name('certificate_unifasts');
+    Route::get("/export_certificate_job_seekers/{id}", [CertificateJobSeekerController::class, 'downloadFile'])->name('certificate_job_seekers');
 
       //Certificate Residency
       Route::get("/certificate_residency", [CertificateResidencyController::class, 'index']);
@@ -198,6 +201,13 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
      Route::get("/delete_certificate_unifasts/{id}", [CertificateUnifastController::class, 'destroy']);
      Route::get("/edit_certificate_unifasts/{id}", [CertificateUnifastController::class, 'edit']);
      Route::put("/update_certificate_unifasts/{id}", [CertificateUnifastController::class, 'update']);
+    
+     //Certificate Job-Seeker
+     Route::get("/certificate_job_seeker", [CertificateJobSeekerController::class, 'index']);
+     Route::post("/create_certificate_job_seekers", [CertificateJobSeekerController::class, 'store']);
+     Route::get("/delete_certificate_job_seekers/{id}", [CertificateJobSeekerController::class, 'destroy']);
+     Route::get("/edit_certificate_job_seekers/{id}", [CertificateJobSeekerController::class, 'edit']);
+     Route::put("/update_certificate_job_seekers/{id}", [CertificateJobSeekerController::class, 'update']);
      //Admin Panel End
 
 
