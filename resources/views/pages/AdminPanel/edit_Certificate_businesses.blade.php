@@ -52,7 +52,7 @@
         <div class="col-md-4 mx-auto">
             <div class="form-group">
                 <label style="" for="">Date: </label>
-                <input type="text" name="date" class="form-control"  value="{{$certificate_businesses->date}}" required>
+                <input type="date" name="date" class="form-control"  value="{{$certificate_businesses->date}}" required>
             </div>
         </div>
         <div class="col-md-4 mx-auto">
