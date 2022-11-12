@@ -98,5 +98,14 @@ class CertificateUnifastController extends Controller
         return redirect()->back()->with('status', 'Record Deleted Successfully!');
    }
 
+   public function downloadFile($id){
+    $certificate_unifasts = Certificate_Unifast::find($id);
+   //  dd($certificate_unifasts);
+    $pdf = PDF::loadView('pdf.certificate_unifasts',[
+   'certificate_unifasts' => $certificate_unifasts
+     ]);
+   return $pdf->download("Unifast Certification.pdf");
+}
+
   
 }

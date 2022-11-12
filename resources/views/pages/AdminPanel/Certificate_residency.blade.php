@@ -22,6 +22,80 @@
           <div class="container mx-auto">
             <div class="row">
                 <div class="col-md-4">
+                  <div class="form-group">
+                    <label style="" for="">Punong Barangay: </label>
+                    <input type="text" name="punongbarangay" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_1" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_2" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_3" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_4" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_5" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_6" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Barangay Kagawad: </label>
+                    <input type="text" name="hon_7" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Sk Chairman: </label>
+                    <input type="text" name="sk_chairman" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Secretary: </label>
+                    <input type="text" name="secretary" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Treasurer: </label>
+                    <input type="text" name="treasurer" class="form-control"  required>
+
+                </div>
+
+
+             
+                <div class="form-group">
+                    <label style="" for="">Amount Paid: </label>
+                    <input type="text" name="amount_paid" class="form-control"  required>
+
+                </div>
+               
+                <div class="form-group">
+                    <label style="" for="">OR Number: </label>
+                    <input type="text" name="or_number" class="form-control"  required>
+
+                </div>
+                <div class="form-group">
+                    <label style="" for="">Date Paid: </label>
+                    <input type="date" name="date_paid" class="form-control"  required>
+
+                </div>
                     <div class="form-group">
                         <label style="" for="">Date: </label>
                         <input type="date" name="date" class="form-control"  required>
@@ -33,8 +107,8 @@
                     </div>
                 </div><div class="col-md-4">
                     <div class="form-group">
-                        <label style="" for="">Residency Status: </label>
-                        <input type="text" name="residency_status" class="form-control" placeholder="Enter status of residency" required>
+                        <label style="" for="">Status: </label>
+                        <input type="text" name="residency_status" class="form-control" placeholder="Enter status" required>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -50,11 +124,7 @@
                   </div>
               </div>
                 <div class="col-md-4">
-                    <div class="form-group">
-                        <label style="" for="">Punong Barangay: </label>
-                        <input type="text" name="punongbarangay" class="form-control" placeholder="Enter punong barangay" required>
-                    </div>
-
+       
 
 
                 </div>
@@ -79,7 +149,7 @@
                 <tr class="text-light">
                     <th>Print</th>
                     <th>Name</th>
-                    <th>Residency Status</th>
+                    <th>Status</th>
                     <th>Barangay</th>
                     <th>Purok Number</th>
                     <th>Date</th>

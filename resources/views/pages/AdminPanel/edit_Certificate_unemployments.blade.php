@@ -13,7 +13,7 @@
 </div>
  <div class="container mx-auto">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="form-group">
                 <label style="" for="">Punong Barangay: </label>
                 <input type="text" name="punongbarangay" value="{{$certificate_unemployments->punongbarangay}}" class="form-control"  required>
