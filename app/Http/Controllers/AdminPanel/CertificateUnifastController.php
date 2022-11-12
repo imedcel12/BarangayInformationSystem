@@ -86,9 +86,17 @@ class CertificateUnifastController extends Controller
         $certificate_unifasts->amount_paid = $request->input('amount_paid');
         $certificate_unifasts->purpose = $request->input('purpose');
         $certificate_unifasts->date = $request->input('date');
-        
+
         $certificate_unifasts->update();
         return redirect("certificate_unifast")->with('status', 'Record Updated Successfully!');
     
      }
+
+     public function destroy($id){
+        $certificate_unifasts = Certificate_Unifast::find($id);
+        $certificate_unifasts->delete();
+        return redirect()->back()->with('status', 'Record Deleted Successfully!');
+   }
+
+  
 }
