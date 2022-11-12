@@ -22,7 +22,7 @@
         <div class="col-md-4">
             <div class="form-group">
                 <label style="" for="">Date: </label>
-                <input type="text" name="date" class="form-control" value="{{$certificate_residencies->date}}" required>
+                <input type="date" name="date" class="form-control" value="{{$certificate_residencies->date}}" required>
             </div>
         </div>
         <div class="col-md-4">
@@ -48,6 +48,87 @@
                 <label style="" for="">Punong Barangay: </label>
                 <input type="text" name="punongbarangay" class="form-control"  value="{{$certificate_residencies->punongbarangay}}" required>
             </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_1" class="form-control" value="{{$certificate_residencies->hon_1}}"  required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_2" class="form-control" value=" {{$certificate_residencies->hon_2}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_3" class="form-control" value=" {{$certificate_residencies->hon_3}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_4" class="form-control" value=" {{$certificate_residencies->hon_4}}"  required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_5" class="form-control" value=" {{$certificate_residencies->hon_5}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_6" class="form-control" value=" {{$certificate_residencies->hon_6}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Barangay Kagawad: </label>
+            <input type="text" name="hon_7" class="form-control" value=" {{$certificate_residencies->hon_7}}"  required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Sk Chairman: </label>
+            <input type="text" name="sk_chairman" class="form-control" value=" {{$certificate_residencies->sk_chairman}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Secretary: </label>
+            <input type="text" name="secretary" class="form-control" value=" {{$certificate_residencies->secretary}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Treasurer: </label>
+            <input type="text" name="treasurer" class="form-control" value=" {{$certificate_residencies->treasurer}}" required>
+        </div>
+        </div>
+
+
+
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Amount Paid: </label>
+            <input type="text" name="amount_paid" class="form-control" value="{{$certificate_residencies->amount_paid}} " required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">OR Number: </label>
+            <input type="text" name="or_number" class="form-control" value="{{$certificate_residencies->or_number}}" required>
+        </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+        <div class="form-group">
+            <label style="" for="">Date Paid: </label>
+            <input type="date" name="date_paid" class="form-control" value="{{$certificate_residencies->date_paid}}" required>
+        </div>
         </div>
 
         </div>
