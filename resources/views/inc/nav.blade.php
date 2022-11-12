@@ -26,7 +26,7 @@
 
 
 
-                    <li class="list-none">
+                    <li class="list-none ">
                         <button id="dropdown-btn"
                             class="dropdown-btn list-group-item list-group-item-action bg-light text-adjust  {{ request()->is('certificate*') ? 'active-page' : '' }}"><i
                                 class="fa fa-certificate fa-lg icon-adjust"></i>Certificates
@@ -58,23 +58,27 @@
                                         <a href="/certificate_unifast"
                                class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_unifast*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Unifast</a>
+
+                                 <a href="/certificate_job_seeker"
+                               class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_job_seeker*') ? 'active-page' : '' }}"><i
+                                        class="fa fa-address-card fa-lg icon-adjust"></i>Job-Seeker</a>
                         </div>
 
 
                     </li>
                     <li class="list-none">
             <button id="dropdown-btn"
-                class="dropdown-btn list-group-item list-group-item-action bg-light text-adjust  {{ request()->is('setting*') ? 'active-page' : '' }}"><i
+                class="dropdown-btn list-group-item list-group-item-action bg-dark text-light text-adjust  {{ request()->is('setting*') ? 'active-page' : '' }}"><i
                     class="fa fa-wrench fa-lg icon-adjust"></i>Setting
                 <span class="fa fa-caret-down align"></span>
             </button>
             <div class="dropdown-container  list-group {{ request()->is('setting*') ? 'active' : '' }}"
                 id="dropdown-btns">
                 <a href="/setting/account"
-                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('setting/account*') ? 'active-page' : '' }}"><i
+                    class="list-group-item list-group-item-action bg-dark text-light  {{ request()->is('setting/account*') ? 'active-page' : '' }}"><i
                         class="fa fa-address-card fa-lg icon-adjust"></i>Account</a>
                 <a href="/setting/maintenance"
-                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('setting/maintenance*') ? 'active-page' : '' }}"><i
+                    class="list-group-item list-group-item-action bg-dark text-light  {{ request()->is('setting/maintenance*') ? 'active-page' : '' }}"><i
                         class="fa fa-cog fa-lg icon-adjust "></i> Barangay </a>
             </div>
 

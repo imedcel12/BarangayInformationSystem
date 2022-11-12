@@ -29,7 +29,7 @@
 
    </head>
    <body>
-      <div class="d-flex overflow-auto" id="wrapper">
+      <div class="d-flex" id="wrapper">
          @include('inc.nav')
          <div id="page-content-wrapper">
             @include('inc.top_nav')
