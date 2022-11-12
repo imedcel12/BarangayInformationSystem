@@ -2,7 +2,7 @@
 
     @include('layouts.image')
 
-    <div class="list-group list-group-flush w-100 pt-3 bg-dark">
+    <div class="list-group pt-3 mt-1">
         <li class="list-none"><a href="/dashboard"
                 class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('dashboard*') ? 'active-page' : '' }}"><i
                     class="fa fa-home fa-lg icon-adjust"></i> Dashboard</a> </li>
@@ -32,28 +32,32 @@
                                 class="fa fa-certificate fa-lg icon-adjust"></i>Certificates
                                 <span class="fa fa-caret-down align"></span>
                         </button>
-                        <div class="dropdown-container  list-group {{ request()->is('certificate*') ? 'active' : '' }}"
+                        <div class="dropdown-container list-group {{ request()->is('certificate*') ? 'active' : '' }}"
                             id="dropdown-btns">
                             <a href="/certificate_clearance"
-                                class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_clearance*') ? 'active-page' : '' }}"><i
+                                class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_clearance*') ? 'active-page' : '' }}"><i
                                     class="fa fa-address-card fa-lg icon-adjust"></i>Clearance</a>
 
                                     <a href="/certificate_residency"
-                                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_residency*') ? 'active-page' : '' }}"><i
+                                    class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_residency*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Residency</a>
 
                                     <a href="/certificate_indigency"
-                                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_indigency*') ? 'active-page' : '' }}"><i
+                                    class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_indigency*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Indigency</a>
 
 
                                     <a href="/certificate_business"
-                                    class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_business*') ? 'active-page' : '' }}"><i
+                                    class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_business*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Business</a>
                                     
                                         <a href="/certificate_unemployment"
-                               class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('/certificate_unemployment*') ? 'active-page' : '' }}"><i
+                               class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_unemployment*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Unemployed</a>
+
+                                        <a href="/certificate_unifast"
+                               class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_unifast*') ? 'active-page' : '' }}"><i
+                                        class="fa fa-address-card fa-lg icon-adjust"></i>Unifast</a>
                         </div>
 
 

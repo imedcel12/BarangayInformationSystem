@@ -6,7 +6,7 @@
    + Create
   </button>
 
-  <form method="post" action="{{url('create_certificate_unemployments')}}">
+  <form method="post" action="{{url('create_certificate_unifasts')}}">
     @csrf
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -104,12 +104,31 @@
 
                     </div>
                     <div class="form-group">
-                        <label style="" for="">Status: </label>
-                        <input type="text" name="status" class="form-control"  required>
+                        <label style="" for="">Purpose: </label>
+                        <input type="text" name="purpose" class="form-control"  required>
+
+                    </div>
+                    <div class="form-group">
+                        <label style="" for="">Age: </label>
+                        <input type="text" name="age" class="form-control"  required>
+
+                    </div>
+                    <div class="form-group">
+                        <label style="" for="">Purok Name: </label>
+                        <input type="text" name="purok_name" class="form-control"  required>
+
+                    </div>
+                    <div class="form-group">
+                        <label style="" for="">Or Number: </label>
+                        <input type="text" name="or_number" class="form-control"  required>
+
+                    </div>
+                    <div class="form-group">
+                        <label style="" for="">Amount Paid: </label>
+                        <input type="text" name="amount_paid" class="form-control"  required>
 
                     </div>
             
-
                 </div>
             </div>
           </div>
@@ -125,7 +144,7 @@
 
 <div class="">
     <div class="col-md-12">
-        <h1 class="mt-1" style="font-weight: 400; font-size: 35px;">Certificate of Unemployment</h1>
+        <h1 class="mt-1" style="font-weight: 400; font-size: 35px;">Unifast</h1>
         <hr>
         <table class="table table-striped table">
             <thead class=" text-center" style="background-color: dimgray;">
@@ -133,25 +152,33 @@
                     <th>Print</th>
                     <th>Name</th>
                     <th>Address</th>
-                    <th>Date </th>
+                    <th>Age</th>
                     <th>Parent Name</th>
+                    <th>Date</th>
+                    <th>Purok Name</th>
+                    <th>Purpose</th>
+                    <th>OR Number</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody class="text-center">
 
-                @foreach ( $certificate_unemployments as $item )
+                @foreach ( $certificate_unifasts as $item )
                     <tr class="text-dark">
                       <td><button class="btn btn-sm btn-info">
-                        <a href="{{url('export_certificate_unemployments/'.$item->id)}}" class="btn btn-sm text-light">Print</a>
+                        <a href="{{url('export_certificate_unifasts/'.$item->id)}}" class="btn btn-sm text-light">Print</a>
                     </button></td>
                         <td>{{$item->name}}</td>
                         <td>{{$item->address}}</td>
-                        <td>{{$item->date}}</td>
+                        <td>{{$item->age}}</td>
                         <td>{{$item->parent_name}}</td>
-                        <td><span> <a href="{{url('edit_certificate_unemployments/'.$item->id)}}" class="btn btn-warning btn-sm text-light">Edit</a></span>
+                        <td>{{$item->date}}</td>
+                        <td>{{$item->purok_name}}</td>
+                        <td>{{$item->purpose}}</td>
+                        <td>{{$item->or_number}}</td>
+                        <td><span> <a href="{{url('edit_certificate_unifasts/'.$item->id)}}" class="btn btn-warning btn-sm text-light">Edit</a></span>
                          <span>
-                            <a href="{{url('delete_certificate_unemployments/'.$item->id)}}" class="btn btn-danger btn-sm text-light">Delete</a>
+                            <a href="{{url('delete_certificate_unifasts/'.$item->id)}}" class="btn btn-danger btn-sm text-light">Delete</a>
                         </span></td>
                     </tr>
                 @endforeach
