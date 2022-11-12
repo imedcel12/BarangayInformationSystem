@@ -34,6 +34,19 @@ class CertificateResidencyController extends Controller
         $certificate_residencies->date = $request->input('date');
         $certificate_residencies->purok_number = $request->input('purok_number');
         $certificate_residencies->punongbarangay = $request->input('punongbarangay');
+        $certificate_residencies->hon_1 = $request->input('hon_1');
+        $certificate_residencies->hon_2 = $request->input('hon_2');
+        $certificate_residencies->hon_3 = $request->input('hon_3');
+        $certificate_residencies->hon_4 = $request->input('hon_4');
+        $certificate_residencies->hon_5 = $request->input('hon_4');
+        $certificate_residencies->hon_6 = $request->input('hon_6');
+        $certificate_residencies->hon_7 = $request->input('hon_7');
+        $certificate_residencies->sk_chairman = $request->input('sk_chairman');
+        $certificate_residencies->secretary = $request->input('secretary');
+        $certificate_residencies->treasurer = $request->input('treasurer');
+        $certificate_residencies->amount_paid = $request->input('amount_paid');
+        $certificate_residencies->or_number = $request->input('or_number');
+        $certificate_residencies->date_paid = $request->input('date_paid');
 
 
         $certificate_residencies->save();
@@ -63,6 +76,19 @@ class CertificateResidencyController extends Controller
     $certificate_residencies->date = $request->input('date');
     $certificate_residencies->purok_number = $request->input('purok_number');
     $certificate_residencies->punongbarangay = $request->input('punongbarangay');
+    $certificate_residencies->hon_1 = $request->input('hon_1');
+    $certificate_residencies->hon_2 = $request->input('hon_2');
+    $certificate_residencies->hon_3 = $request->input('hon_3');
+    $certificate_residencies->hon_4 = $request->input('hon_4');
+    $certificate_residencies->hon_5 = $request->input('hon_4');
+    $certificate_residencies->hon_6 = $request->input('hon_6');
+    $certificate_residencies->hon_7 = $request->input('hon_7');
+    $certificate_residencies->sk_chairman = $request->input('sk_chairman');
+    $certificate_residencies->secretary = $request->input('secretary');
+    $certificate_residencies->treasurer = $request->input('treasurer');
+    $certificate_residencies->amount_paid = $request->input('amount_paid');
+    $certificate_residencies->or_number = $request->input('or_number');
+    $certificate_residencies->date_paid = $request->input('date_paid');
     $certificate_residencies->update();
     return redirect("certificate_residency")->with('status', 'Record Updated Successfully!');
 

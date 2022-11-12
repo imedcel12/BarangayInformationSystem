@@ -3,7 +3,7 @@
 <div class="d-flex justify-content-end mt-2">
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Create
+   + Create
   </button>
 
   <form method="post" action="{{url('create_certificate_businesses')}}">

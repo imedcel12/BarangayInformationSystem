@@ -158,6 +158,7 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
     Route::get("/export_certificate_indigencies/{id}", [CertificateIndigencyController::class, 'downloadFile'])->name('certificate_indigencies');
     Route::get("/export_certificate_businesses/{id}", [CertificateBusinessController::class, 'downloadFile'])->name('certificate_businesses');
     Route::get("/export_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'downloadFile'])->name('certificate_unemployments');
+    Route::get("/export_certificate_unifasts/{id}", [CertificateUnifastController::class, 'downloadFile'])->name('certificate_unifasts');
 
       //Certificate Residency
       Route::get("/certificate_residency", [CertificateResidencyController::class, 'index']);
