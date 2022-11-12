@@ -17,6 +17,8 @@
                 Barangay Banlasan
             </b>
         </h2>
+        <img src="{{ public_path('images/blogo.jpg') }}" alt="logo"
+            style="position: absolute; top: 60px; right: 100px; width:100px;">
         <h2 style="text-align:center;">Tubigon,Bohol</h2>
 
         <div style="text-align:center;">BARANGAY CLEARANCE</div>
@@ -37,7 +39,7 @@
         <p style="text-align:center">
             <strong>NOT VALID WITHOUT OFFICIAL SEAL</strong>
         </p>
-        <p>Given this {{ $certificate_clearances->date }}</p>
+        <p>Given this {{ \Carbon\Carbon::parse($certificate_clearances->date)->isoFormat('MMM Do YYYY') }}</p>
 
         <div class="container">
             <p class="cap">
@@ -56,7 +58,7 @@
         </p>
 
         <p>OR Number: {{ $certificate_clearances->or_number }}</p>
-        <p>Issued on: {{ $certificate_clearances->date }}</p>
+        <p>Issued on: {{ \Carbon\Carbon::parse($certificate_clearances->date)->isoFormat('MMM Do YYYY') }}</p>
 
     </div>
 </body>

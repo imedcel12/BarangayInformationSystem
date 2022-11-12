@@ -125,7 +125,7 @@
         <br>
         <div class="title">
             <h2 style="font-weight:lighter">OFFICE OF THE PUNONG BARANGAY</h2>
-            <h2>CERTIFICATE OF INDIGENCY</h2>
+            <h2>CERTIFICATE OF RESIDENCY</h2>
         </div>
     </div>
     <div class="container">
