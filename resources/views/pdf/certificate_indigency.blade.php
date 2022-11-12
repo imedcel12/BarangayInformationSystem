@@ -18,9 +18,9 @@
 
         .sidebar {
             width: 35%;
-            height: 75%;
+            height: 70%;
             position: absolute;
-            top: 180px;
+            top: 250px;
             left: 5px;
             margin: 0 auto;
             padding: 0;
@@ -34,7 +34,7 @@
             width: 60%;
             height: 75%;
             position: absolute;
-            top: 280px;
+            top: 350px;
             right: 0;
             margin: 0 auto;
             padding: 10px;
@@ -54,6 +54,7 @@
 
         ul li {
             list-style: none;
+            color: blue;
         }
 
         .footer-sider {
@@ -100,75 +101,81 @@
             text-indent: 25.5em;
             font-weight: 500;
         }
+
+        .footer-sider {
+            line-height: 1.5em;
+            font-weight: lighter;
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
+    <br>
+    <br>
     <div class="header">
         <div>
             <h4>Republic of the Philippines</h4>
             <h4>Province of Bohol</h4>
             <h4>Municipality of Tubigon</h4>
             <h4>BARANGAY BANLASAN</h4>
+            <img src="{{ public_path('images/blogo.jpg') }}" alt="logo"
+                style="position: absolute; top: 60px; right: 100px; width:70px;">
         </div>
+        <br>
         <div class="title">
-            <h2>OFFICE OF THE PUNONG BARANGAY</h2>
+            <h2 style="font-weight:lighter">OFFICE OF THE PUNONG BARANGAY</h2>
             <h2>CERTIFICATE OF INDIGENCY</h2>
         </div>
     </div>
     <div class="container">
         <div class="sidebar">
+            <h3><strong>BARANGAY OFFICIALS</strong></h3>
             <ul>
                 <li class="li-margin">
-                    <h5>HON. EUNICE A. ANDOY</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_1 }}</h5>
                     <div id="title">Punong Barangay</div>
                 </li>
                 <li>
-                    <h5>HON. EDUARDO G. CALIMBO</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_2 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5>HON. SATURNINO L. ECONAR</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_3 }}</h5>
                     <div id="title">Barangay Kagawad</div>
 
                 </li>
                 <li>
-                    <h5>HON. DANTE S. PALWA</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_4 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5>HON. ZENAIDA P. MORENO</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_5 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5>HON. LUCAS B. MAGSUBAR</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_6 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5>HON. CORAZON J. CABALGADA</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_7 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5>HON. FELIX C. RULOMA</h5>
-                    <div id="title">Barangay Kagawad</div>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->sk_chairman }}</h5>
+                    <div id="title">Sk Chairman</div>
                 </li>
                 <li>
-                    <h5>HON. REYMON L. LAPIZ</h5>
-                    <div id="title">Barangay Kagawad</div>
-                </li>
-                <li>
-                    <h5>AGUSTINA C. DE LEON</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->secretary }}</h5>
                     <div id="title">Barangay Secretary</div>
                 </li>
                 <li>
-                    <h5>JANILYN J. CABALGADA</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->treasurer }}</h5>
                     <div id="title">Barangay Treasurer</div>
                 </li>
             </ul>
-
-
+            <hr>
             <div class="footer-sider">
-
                 Amount Paid: _____________
                 <br>
                 Cert. No./O.R. No: _________
@@ -180,24 +187,29 @@
         <div class="main">
             <div class="main-title">TO WHOM IT MAY CONCERN: </div>
             <p class="main-para">
-                THIS IS TO CERTIFY THAT MA. MELODY L. CENITA, married and a resident of Barangay Banlasan, Tubigon,
+                THIS IS TO CERTIFY THAT {{ $certificate_indigencies->name }}, married and a resident of Barangay
+                Banlasan, Tubigon,
                 Bohol.
             </p>
             <p class="main-para">
 
-                This is to certify further that he was brought to Tubigon Community Hospital on October 29, 2022 due to
+                This is to certify further that he was brought to Tubigon Community Hospital on
+                {{ \Carbon\Carbon::parse($certificate_indigencies->date_paid)->isoFormat('MMM Do YYYY') }} due to
                 hypertension and had a balance fee, as per barangay records, they are one of the indigent families in
                 our barangay.
             </p>
             <p class="main-para">
                 This certification is being issued upon the request of the aboved-mention name for whatever legal
                 purpose it may serve his best.
-                Issued this 3rd day of November, 2022 at Banlasan, Tubigon,Bohol , Philippines.
+                Issued this {{ \Carbon\Carbon::parse($certificate_indigencies->date_paid)->isoFormat('MMM Do YYYY') }}
+                at
+                {{ $certificate_indigencies->address }},
+                Philippines.
 
             </p>
             <div class="main-footer">
                 <h5>Certified by:</h5>
-                <p>EUNICE A. ANDOY</p>
+                <p>{{ $certificate_indigencies->punongbarangay }}</p>
                 <p>PUNONG BARANGAY</p>
             </div>
             <div id="note" class="note">
