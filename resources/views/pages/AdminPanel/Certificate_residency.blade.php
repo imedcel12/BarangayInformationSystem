@@ -3,7 +3,7 @@
 <div class="d-flex justify-content-end mt-2">
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Create
+   + Create
   </button>
 
   <form method="post" action="{{url('create_certificate_residencies')}}">
@@ -44,6 +44,12 @@
                     </div>
                 </div>
                 <div class="col-md-4">
+                  <div class="form-group">
+                      <label style="" for="">Purok Number: </label>
+                      <input type="text" name="purok_number" class="form-control" placeholder="Enter barangay" required>
+                  </div>
+              </div>
+                <div class="col-md-4">
                     <div class="form-group">
                         <label style="" for="">Punong Barangay: </label>
                         <input type="text" name="punongbarangay" class="form-control" placeholder="Enter punong barangay" required>
@@ -64,17 +70,18 @@
   </div>
 </div>
 
-<div class="container">
+<div class="">
     <div class="col-md-12">
-        <h1 class="mt-1" style="font-weight: 400">Certificate of Residency</h1>
+        <h1 class="mt-1" style="font-weight: 400; font-size: 35px;">Certificate of Residency</h1>
         <hr>
         <table class="table table-striped table">
-            <thead class="bg-secondary text-center">
+            <thead class=" text-center" style="background-color: dimgray;">
                 <tr class="text-light">
                     <th>Print</th>
                     <th>Name</th>
                     <th>Residency Status</th>
                     <th>Barangay</th>
+                    <th>Purok Number</th>
                     <th>Date</th>
                     <th>Punong Barangay</th>
                     <th>Action</th>
@@ -90,6 +97,7 @@
                         <td>{{$item->name}}</td>
                         <td>{{$item->residency_status}}</td>
                         <td>{{$item->barangay}}</td>
+                        <td>{{$item->purok_number}}</td>
                         <td>{{$item->date}}</td>
                         <td>{{$item->punongbarangay}}</td>
                         <td><span> <a href="{{url('edit_certificate_residencies/'.$item->id)}}" class="btn btn-warning btn-sm text-light">Edit</a></span>

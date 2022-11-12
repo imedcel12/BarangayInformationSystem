@@ -9,7 +9,7 @@ class Certificate_Residency extends Model
 {
     use HasFactory;
     protected $table = "certificate_residencies";
-    protected $fillable = ['residency_status','name','barangay','date','punongbarangay'];
+    protected $fillable = ['residency_status','name','barangay','purok_number','date','punongbarangay'];
     public $primaryKey = 'id';
 
     public $timestamps = false;

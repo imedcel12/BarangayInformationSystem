@@ -37,6 +37,12 @@
                 <input type="text" name="barangay" class="form-control" value="{{$certificate_residencies->barangay}}" required>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label style="" for="">Purok Number </label>
+                <input type="text" name="purok_number" class="form-control" value="{{$certificate_residencies->purok_number}}" required>
+            </div>
+        </div>
         <div class="col-md-4 mx-auto">
             <div class="form-group">
                 <label style="" for="">Punong Barangay: </label>

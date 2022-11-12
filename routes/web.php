@@ -16,6 +16,8 @@ use App\Http\Controllers\AdminPanel\CertificateIndigencyController;
 use App\Http\Controllers\AdminPanel\CertificateBusinessController;
 //Unemployment Module
 use App\Http\Controllers\AdminPanel\CertificateUnemploymentController;
+//Unifast Module
+use App\Http\Controllers\AdminPanel\CertificateUnifastController;
 
 use App\Http\Controllers\AdminPanel\BlotterController;
 use App\Http\Controllers\AdminPanel\CertificateClearanceController;
@@ -187,7 +189,15 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
      Route::get("/delete_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'destroy']);
      Route::get("/edit_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'edit']);
      Route::put("/update_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'update']);
-    //Admin Panel End
+    
+    
+     //Certificate Unifast
+     Route::get("/certificate_unifast", [CertificateUnifastController::class, 'index']);
+     Route::post("/create_certificate_unifasts", [CertificateUnifastController::class, 'store']);
+     Route::get("/delete_certificate_unifasts/{id}", [CertificateUnifastController::class, 'destroy']);
+     Route::get("/edit_certificate_unifasts/{id}", [CertificateUnifastController::class, 'edit']);
+     Route::put("/update_certificate_unifasts/{id}", [CertificateUnifastController::class, 'update']);
+     //Admin Panel End
 
 
 // Client Side Start
