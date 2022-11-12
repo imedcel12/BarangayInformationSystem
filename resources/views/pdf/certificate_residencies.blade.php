@@ -200,9 +200,11 @@
             <p class="main-para">
                 This certification is being issued upon the request of the above-mentioned name for whatever legal
                 purpose it may serve her best.
-                Issued this {{ \Carbon\Carbon::parse($certificate_residencies->date)->isoFormat('MMM Do YYYY') }} at
-                {{ $certificate_residencies->barangay }}.
+
             </p>
+            <p class="main-para"> Issued this
+                {{ \Carbon\Carbon::parse($certificate_residencies->date)->isoFormat('MMM Do YYYY') }} at
+                {{ $certificate_residencies->barangay }}.</p>
             <div class="main-footer">
                 <h5>Certified by:</h5>
                 <p>{{ $certificate_residencies->punongbarangay }}</p>
