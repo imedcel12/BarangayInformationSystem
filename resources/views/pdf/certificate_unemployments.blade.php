@@ -125,7 +125,7 @@
         <br>
         <div class="title">
             <h2 style="font-weight:lighter">OFFICE OF THE PUNONG BARANGAY</h2>
-            <h2>CERTIFICATE OF INDIGENCY</h2>
+            <h2>CERTIFICATE OF UNEMPLOYEMENT</h2>
         </div>
     </div>
     <div class="container">
@@ -133,44 +133,44 @@
             <h3><strong>BARANGAY OFFICIALS</strong></h3>
             <ul>
                 <li class="li-margin">
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_1 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_1 }}</h5>
                     <div id="title">Punong Barangay</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_2 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_2 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_3 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_3 }}</h5>
                     <div id="title">Barangay Kagawad</div>
 
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_4 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_4 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_5 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_5 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_6 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_6 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->hon_7 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->hon_7 }}</h5>
                     <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->sk_chairman }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->sk_chairman }}</h5>
                     <div id="title">Sk Chairman</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->secretary }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->secretary }}</h5>
                     <div id="title">Barangay Secretary</div>
                 </li>
                 <li>
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_indigencies->treasurer }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unemployments->treasurer }}</h5>
                     <div id="title">Barangay Treasurer</div>
                 </li>
             </ul>
@@ -187,28 +187,23 @@
         <div class="main">
             <div class="main-title">TO WHOM IT MAY CONCERN: </div>
             <p class="main-para">
-                THIS IS TO CERTIFY THAT {{ $certificate_indigencies->name }}, married and a resident of
-                {{ $certificate_indigencies->address }}
+                THIS IS TO CERTIFY THAT {{ $certificate_unemployments->name }}, married and a resident of
+                {{ $certificate_unemployments->address }}
             </p>
             <p class="main-para">
 
-                This is to certify further that he/she is the parent of {{ $certificate_indigencies->parent_name }}
-                {{ \Carbon\Carbon::parse($certificate_indigencies->date_paid)->isoFormat('MMM Do YYYY') }} due to
-                hypertension and had a balance fee, as per barangay records, they are one of the indigent families in
-                our barangay.
+                This is to certify further that he/she is the parent of {{ $certificate_unemployments->parent_name }}
+                and unemployed residing with her family in {{ $certificate_unemployments->address }}
+
             </p>
             <p class="main-para">
-                This certification is being issued upon the request of the aboved-mention name for whatever legal
-                purpose it may serve his best.
-                Issued this {{ \Carbon\Carbon::parse($certificate_indigencies->date_paid)->isoFormat('MMM Do YYYY') }}
-                at
-                {{ $certificate_indigencies->address }},
-                Philippines.
 
+                Issued this {{ \Carbon\Carbon::parse($certificate_unemployments->date)->isoFormat('MMM Do YYYY') }}
+                {{ $certificate_unemployments->address }}
             </p>
             <div class="main-footer">
                 <h5>Certified by:</h5>
-                <p>{{ $certificate_indigencies->punongbarangay }}</p>
+                <p>{{ $certificate_unemployments->punongbarangay }}</p>
                 <p>PUNONG BARANGAY</p>
             </div>
             <div id="note" class="note">
