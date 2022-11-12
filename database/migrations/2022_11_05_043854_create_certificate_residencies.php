@@ -18,6 +18,7 @@ class CreateCertificateResidencies extends Migration
             $table->string('name')->nullable();
             $table->string('residency_status')->nullable();
             $table->string('barangay')->nullable();
+            $table->string('purok_number')->nullable();
             $table->date('date')->nullable();
             $table->string('punongbarangay')->nullable();
             $table->timestamps();

@@ -32,6 +32,7 @@ class CertificateResidencyController extends Controller
         $certificate_residencies->residency_status = $request->input('residency_status');
         $certificate_residencies->barangay = $request->input('barangay');
         $certificate_residencies->date = $request->input('date');
+        $certificate_residencies->purok_number = $request->input('purok_number');
         $certificate_residencies->punongbarangay = $request->input('punongbarangay');
 
 
@@ -60,6 +61,7 @@ class CertificateResidencyController extends Controller
     $certificate_residencies->residency_status = $request->input('residency_status');
     $certificate_residencies->barangay = $request->input('barangay');
     $certificate_residencies->date = $request->input('date');
+    $certificate_residencies->purok_number = $request->input('purok_number');
     $certificate_residencies->punongbarangay = $request->input('punongbarangay');
     $certificate_residencies->update();
     return redirect("certificate_residency")->with('status', 'Record Updated Successfully!');
