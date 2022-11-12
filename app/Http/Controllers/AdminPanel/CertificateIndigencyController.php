@@ -90,13 +90,13 @@ class CertificateIndigencyController extends Controller
  }
 
     public function downloadFile($id){
-         $certificate_residencies = Certificate_Residency::find($id);
-        //  dd($certificate_residencies);
-         $pdf = PDF::loadView('pdf.certificate_residencies',[
-        'certificate_residencies' => $certificate_residencies
+         $certificate_indigencies = Certificate_Indigency::find($id);
+         $pdf = PDF::loadView('pdf.certificate_indigency',[
+        'certificate_indigencies' => $certificate_indigencies
           ]);
-        return $pdf->download("Certificate of Residency.pdf");
+        return $pdf->download("Certificate of Indigency.pdf");
     }
-    
+
+
 
 }
