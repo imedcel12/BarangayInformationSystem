@@ -20,7 +20,7 @@
 
   </script>
 
-  <title>Login</title>
+
 </head>
 <body style="background-image: url({{ URL::asset('images/city.jpg') }}); background-repeat:no-repeat; background-size: cover ">
 
