@@ -106,6 +106,11 @@
                     <input type="text" name="name" class="form-control" value=" {{$certificate_job_seekers->name}}"  required>
 
                 </div>
+                <div class="form-group">
+                    <label style="" for="">Status: </label>
+                    <input type="text" name="status" class="form-control" value=" {{$certificate_job_seekers->status}}"  required>
+
+                </div>
             </div>
         </div>
 

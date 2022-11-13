@@ -46,6 +46,7 @@ public function store(Request $request){
     $certificate_job_seekers->receipt_num = $request->input('receipt_num');
     $certificate_job_seekers->amount_paid = $request->input('amount_paid');
     $certificate_job_seekers->name = $request->input('name');
+    $certificate_job_seekers->status = $request->input('status');
    
 
 
@@ -90,6 +91,7 @@ public function destroy($id){
     $certificate_job_seekers->receipt_num = $request->input('receipt_num');
     $certificate_job_seekers->amount_paid = $request->input('amount_paid');
     $certificate_job_seekers->name = $request->input('name');
+    $certificate_job_seekers->status = $request->input('status');
     $certificate_job_seekers->update();
     return redirect("certificate_job_seeker")->with('status', 'Record Updated Successfully!');
 
