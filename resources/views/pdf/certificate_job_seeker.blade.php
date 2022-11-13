@@ -200,7 +200,8 @@
             <div class="main-title">TO WHOM IT MAY CONCERN: </div>
             <p class="main-para">
 
-                THIS IS TO CERTIFY that Mr./Ms. {{ $certificate_job_seekers->name }}, single and a resident of
+                THIS IS TO CERTIFY that Mr./Ms. {{ $certificate_job_seekers->name }},
+                {{ $certificate_job_seekers->status }} and a resident of
                 {{ $certificate_job_seekers->full_addresss }} for 27 years/months, is a qualified availee of RA 11261
                 for the First Time
                 Jobseekers Act of 2019.
