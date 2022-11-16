@@ -33,6 +33,7 @@ class CreateCertificateJobSeekers extends Migration
             $table->string('treasurer')->nullable();
             $table->string('receipt_num')->nullable();
             $table->string('amount_paid')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

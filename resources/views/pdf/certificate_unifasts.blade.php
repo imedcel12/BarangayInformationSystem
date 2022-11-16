@@ -18,7 +18,7 @@
 
         .sidebar {
             width: 35%;
-            height: 70%;
+            height: 75%;
             position: absolute;
             top: 250px;
             left: 5px;
@@ -133,8 +133,12 @@
             <h3><strong>BARANGAY OFFICIALS</strong></h3>
             <ul>
                 <li class="li-margin">
-                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unifasts->hon_1 }}</h5>
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unifasts->punongbarangay }}</h5>
                     <div id="title">Punong Barangay</div>
+                </li>
+                <li class="li-margin">
+                    <h5 style="font-size: 17px;">Hon. {{ $certificate_unifasts->hon_1 }}</h5>
+                    <div id="title">Barangay Kagawad</div>
                 </li>
                 <li>
                     <h5 style="font-size: 17px;">Hon. {{ $certificate_unifasts->hon_2 }}</h5>

@@ -29,6 +29,7 @@ class Certificate_Job_seeker extends Model
         'treasurer',
         'receipt_num',
         'amount_paid',
+        'status',
     ];
     public $primaryKey = 'id';
 

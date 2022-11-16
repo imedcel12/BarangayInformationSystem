@@ -115,6 +115,11 @@
                         <input type="text" name="name" class="form-control"  required>
     
                     </div>
+                    <div class="form-group">
+                        <label style="" for="">Status: </label>
+                        <input type="text" name="status" class="form-control"  required>
+    
+                    </div>
                 </div>
 
              
@@ -148,6 +153,7 @@
                     <th>Cert Validity</th>
                     <th>Witness</th>
                     <th>Date</th>
+                    <th>Status</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -163,6 +169,7 @@
                         <td>{{$item->cert_validity}}</td>
                         <td>{{$item->witness}}</td>
                         <td>{{$item->date}}</td>
+                        <td>{{$item->status}}</td>
                         <td><span> <a href="{{url('edit_certificate_job_seekers/'.$item->id)}}" class="btn btn-warning btn-sm text-light">Edit</a></span>
                          <span>
                             <a href="{{url('delete_certificate_job_seekers/'.$item->id)}}" class="btn btn-danger btn-sm text-light">Delete</a>
