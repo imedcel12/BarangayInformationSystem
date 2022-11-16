@@ -84,7 +84,7 @@
                     </div>
 
                 @empty
-                    <h4 style="color: black; margin-top:4rem;">You have no Blotter Report.</h4>
+                    <h4 style="color: black; margin-top:4rem;">You have no Complaint Report.</h4>
                 @endforelse
             </div>
         </div>
@@ -106,7 +106,7 @@
              <table  class="bulk_action dataTables_info table datatable-element table-striped jambo_table bulk_action text-center border no-footer">
                 <thead style="background: rgb(0, 87, 121); color:white;">
                    <tr class="headings">
-                      <th class="column-title">Blotter Id</th>
+                      <th class="column-title">Complaint Id</th>
                       <th class="column-title">Status</th>
 
                       <th class="column-title">Schedule Date</th>
@@ -251,7 +251,7 @@ $('body').on('click', '#viewBlotter', function(){
                      }
                   }
                   else{
-                     console.log("No BLotter Data Available");
+                     console.log("No Complaint Data Available");
                   }
                })
              });

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-sm-12 text-left ">
-    <h1 class="border-bottom border-bot pt-3">Blotters Record</h1>
+    <h1 class="border-bottom border-bot pt-3">Complaint Record</h1>
     </div>
     <div class="main-wrapper col-sm-12 text-left h-100  pr-0 pl-0 " >
         <div class="col-sm-12 pl-0 pr-0 search-bars" >
@@ -13,7 +13,7 @@
 
 
         <div class="topnav navbar navbar">
-  <button class="btn btn-success text-white " href="#home" data-toggle="modal" data-target="#blottermodal" id="createNewBlotter">New Blotter Record <i class="fa fa-plus"></i></button>
+  <button class="btn btn-success text-white " href="#home" data-toggle="modal" data-target="#blottermodal" id="createNewBlotter">New Complaint Record <i class="fa fa-plus"></i></button>
 
   <div class="modal fade" id="blottermodal" name="blottermodal" tabindex="-1" role="dialog" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
@@ -263,7 +263,7 @@
 
                      <div class="item form-group" style="margin-top: 1rem;">
                         <div class="col-md-12 col-sm-12 offset-md-4">
-                           <button type="submit" id="saveBtn" class="btn btn-success">Save New Blotters</button>
+                           <button type="submit" id="saveBtn" class="btn btn-success">Save New Complaint</button>
                            <a class="btn btn-primary" type="button" data-dismiss="modal" style="margin-left: 4px;" >Cancel</a>
                            <input class="btn btn-primary" type="reset" value="Reset">
                         </div>
@@ -293,7 +293,7 @@
             <table  class="bulk_action dataTables_info table datatable-element table-striped jambo_table bulk_action text-center border no-footer">
                <thead>
                   <tr class="headings">
-                     <th class="column-title">Blotter Id</th>
+                     {{-- <th class="column-title">Complaint Id</th> --}}
                      <th class="column-title">Status</th>
                      <th class="column-title">Incident Location</th>
                      <th class="column-title">Incident Type</th>
@@ -377,8 +377,8 @@
             <thead>
                <tr class="headings">
                   <th class="column-title">Action</th>
-                  <th class="column-title">Blotter Id </th>
-                  <th class="column-title">Blotter Status </th>
+                  <th class="column-title">Complaint Id </th>
+                  <th class="column-title">Complaint Status </th>
                   <th class="column-title">Date Recorded </th>
                   <th class="column-title">Time Recorded  </th>
                   <th class="column-title">Incident Type </th>

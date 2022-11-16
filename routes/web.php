@@ -193,15 +193,15 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
      Route::get("/delete_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'destroy']);
      Route::get("/edit_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'edit']);
      Route::put("/update_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'update']);
-    
-    
+
+
      //Certificate Unifast
      Route::get("/certificate_unifast", [CertificateUnifastController::class, 'index']);
      Route::post("/create_certificate_unifasts", [CertificateUnifastController::class, 'store']);
      Route::get("/delete_certificate_unifasts/{id}", [CertificateUnifastController::class, 'destroy']);
      Route::get("/edit_certificate_unifasts/{id}", [CertificateUnifastController::class, 'edit']);
      Route::put("/update_certificate_unifasts/{id}", [CertificateUnifastController::class, 'update']);
-    
+
      //Certificate Job-Seeker
      Route::get("/certificate_job_seeker", [CertificateJobSeekerController::class, 'index']);
      Route::post("/create_certificate_job_seekers", [CertificateJobSeekerController::class, 'store']);

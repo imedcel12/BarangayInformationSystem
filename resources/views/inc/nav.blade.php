@@ -19,7 +19,7 @@
 
         <li class="list-none"><a href="/blotter"
                 class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('blotter*') ? 'active-page' : '' }}"><i
-                    class="fa fa-folder fa-lg icon-adjust"></i> Blotters Record</a> </li>
+                    class="fa fa-folder fa-lg icon-adjust"></i> Complaint Record</a> </li>
         <li class="list-none"><a href="/schedule"
                 class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('schedule*') ? 'active-page' : '' }}"><i
                     class="fa fa-suitcase fa-lg icon-adjust"></i> Settlement Schedule</a> </li>
@@ -50,7 +50,7 @@
                                     <a href="/certificate_business"
                                     class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_business*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Business</a>
-                                    
+
                                         <a href="/certificate_unemployment"
                                class="list-group-item list-group-item-action text-light  bg-dark {{ request()->is('/certificate_unemployment*') ? 'active-page' : '' }}"><i
                                         class="fa fa-address-card fa-lg icon-adjust"></i>Unemployed</a>

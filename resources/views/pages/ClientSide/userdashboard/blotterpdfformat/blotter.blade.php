@@ -18,7 +18,7 @@
         PROVINCE OF {{ $certificate_layout[0]->province ?: 'Not Set'}}<br>
          <b style="text-align: center;"><u>BARANGAY {{ $certificate_layout[0]->barangay ?: 'Not Set'}}</u></b>
         </p>
-        <div style='font-size:22px;font-family: "Times New Roman, Times, serif"; text-align: center;'><b>EXTRACT COPY FROM BARANGAY BLOTTER</b>
+        <div style='font-size:22px;font-family: "Times New Roman, Times, serif"; text-align: center;'><b>EXTRACT COPY FROM BARANGAY COMPLAINT</b>
         </div>
       </div>
       <div class="column-left" >
@@ -31,13 +31,13 @@
 
       <h4 style="margin-bottom: 1.5rem;"><b>TO WHOM IT MAY CONCERN:</b></h4>
 
-      <h4><b style="margin-left: 5rem;">THIS IS TO CERTIFY</b> that as per record available in the Barangay BLotter on Barangay {{ $certificate_layout[0]->barangay ?: 'Not Set' }}, the following data exixts:</h4>
+      <h4><b style="margin-left: 5rem;">THIS IS TO CERTIFY</b> that as per record available in the Barangay Complaint on Barangay {{ $certificate_layout[0]->barangay ?: 'Not Set' }}, the following data exixts:</h4>
 
 
 
       <div style="margin-top: 1.5rem;" class="data-row">
           <div class="data-row-1">
-              <p><b>Blotter No</b></p>
+              <p><b>Complaint No</b></p>
               <p><b>Date Reported</b></p>
               <p><b>Time Reported</b></p>
           </div>

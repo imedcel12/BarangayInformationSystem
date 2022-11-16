@@ -13,7 +13,7 @@
 
   <title>Login</title>
 </head>
-<body style="background-image: url({{ URL::asset('images/background.png') }}); background-repeat:no-repeat; background-size: cover ">
+<body style="background-image: url({{ URL::asset('images/Backgrnd.jpg') }}); background-repeat:no-repeat; background-size: cover ">
 
     @include('inc.client_nav_login')
 
@@ -21,14 +21,14 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card card-signin my-5">
-        <div class="card-body">
-          <h5 class="card-title text-center">Log In</h5>
+      <div class="card card-signin my-5 bg-transparent">
+        <div class="card-body bg-transparent">
+          <h5 class="card-title text-center text-white" style="font-size: 25px;">Log In</h5>
           {{-- form --}}
           <form class="log-in-form" action="login" method="post">
             @csrf
             <div class="form-label-group mt-2">
-              <label for="login_email">Email address</label>
+              <label for="login_email" style="color:white;">Email address</label>
               <input type="text" id="login_email" name="login_email" class="form-control" placeholder="Email address" autofocus
               value={{ old('login_email')}}>
               @error('login_email')
@@ -37,7 +37,7 @@
             </div>
 
             <div class="form-label-group mt-2">
-              <label for="login_password">Password</label>
+              <label for="login_password" style="color:white;">Password</label>
               <input type="password" id="login_password" name="login_password" class="form-control" placeholder="Password" >
               @error('login_password')
               <span class="text-danger error_text create_account_form_lastname_error">{{ $message }}</span>

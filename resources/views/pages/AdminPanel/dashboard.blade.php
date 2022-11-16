@@ -9,7 +9,7 @@
 </div>
 <div class="main-wrapper col-sm-12 text-left h-100  pr-0 pl-0 pt-2 text-white" >
 <div class="row pl-4 pr-4">
-   <div class="col-sm-3 form-group text-center dashboard-box">
+   <div class="col-sm-3 form-group text-center dashboard-box bg-success">
       <h5 class="mb-3" >Registered Population</h5>
       <h1 class="mb-0">{{ $registered ?? '0'}}</h1>
    </div>
@@ -21,14 +21,18 @@
       <h5 class="mb-3">List of Request</h5
       <h1 class="mb-0">{{ $certificate_requests ?? '0'}}</h1>
    </div> --}}
-   <div class="col-sm-3 form-group text-center dashboard-box">
+   <div class="col-sm-3 form-group text-center dashboard-box" style="background-color:orangered ">
       <h5 class="mb-3" >Females</h5>
       <h1 class="">{{ $female ?? '0'}}</h1>
    </div>
-   <div class="col-sm-3 form-group text-center dashboard-box">
+   <div class="col-sm-3 form-group text-center dashboard-box bg-secondary" >
       <h5 class="mb-3" >Registered Voter</h5>
       <h1 class="">{{ $voter ?? '0'}}</h1>
    </div>
+   <div class="col-sm-3 form-group text-center dashboard-box bg-warning" >
+    <h5 class="mb-3" >Senior Citizen</h5>
+    <h1 class="">{{ $voter ?? '0'}}</h1>
+ </div>
    <div class="col-sm-12 border border-bot ">
    </div>
 </div>
