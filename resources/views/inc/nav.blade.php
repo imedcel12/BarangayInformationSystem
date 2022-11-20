@@ -10,13 +10,6 @@
                 class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('resident*') ? 'active-page' : '' }}"><i
                     class="fa fa-user-o fa-lg icon-adjust"></i> Resident Information</a> </li>
 
-
-        <li class="list-none"><a href="/senior_citizen"
-                class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('senior_citizen*') ? 'active-page' : '' }}"><i
-                    class="fa fa-user-o fa-lg icon-adjust"></i> Senior Citizen</a> </li>
-
-
-
         <li class="list-none"><a href="/blotter"
                 class="list-group-item list-group-item-action bg-light text-adjust {{ request()->is('blotter*') ? 'active-page' : '' }}"><i
                     class="fa fa-folder fa-lg icon-adjust"></i> Blotters Record</a> </li>
