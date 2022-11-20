@@ -23,7 +23,5 @@ class AccountSeeder extends Seeder
             'password'=>Hash::make('test12345'),
             'type'=> "Admin",
         ]);
-
-
     }
 }
