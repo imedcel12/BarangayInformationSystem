@@ -16,8 +16,8 @@ class AccountSeeder extends Seeder
     public function run()
     {
         DB::table('accounts')->insert([
-            'first_name'=>'Chadie Gil',
-            'last_name'=>'Augis',
+            'first_name'=>'Leeyhan',
+            'last_name'=>'Hawil',
             'username'=>'admin',
             'email'=>'admin@gmail.com',
             'password'=>Hash::make('test12345'),

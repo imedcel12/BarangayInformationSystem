@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -33,7 +33,7 @@
             @csrf
             <div class="form-label-group mt-2">
               <label for="register_firstname">First name</label>
-              <input type="text" id="register_firstname" name="register_firstname" class="form-control" placeholder="Enter First Name" 
+              <input type="text" id="register_firstname" name="register_firstname" class="form-control" placeholder="Enter First Name"
               value={{ old('register_firstname')}}>
               @error('register_firstname')
               <span class="text-danger error_text"> {{ $message }}</span>
@@ -42,7 +42,7 @@
             {{-- lastname --}}
             <div class="form-label-group mt-2">
               <label for="register_lastname">Last name</label>
-              <input type="text" id="register_lastname" name="register_lastname" class="form-control" placeholder="Enter Last Name" 
+              <input type="text" id="register_lastname" name="register_lastname" class="form-control" placeholder="Enter Last Name"
               value={{ old('register_lastname')}}>
               @error('register_lastname')
               <span class="text-danger error_text"> {{ $message }}</span>
@@ -52,7 +52,7 @@
             {{-- username --}}
             <div class="form-label-group mt-2">
               <label for="register_username">Username</label>
-              <input type="text" id="register_username" name="register_username" class="form-control" placeholder="Enter Username" 
+              <input type="text" id="register_username" name="register_username" class="form-control" placeholder="Enter Username"
               value={{ old('register_username')}}>
               @error('register_username')
               <span class="text-danger error_text"> {{ $message }}</span>
@@ -90,7 +90,7 @@
             {{-- email address --}}
             <div class="form-label-group mt-2">
               <label for="register_email">Email address</label>
-              <input type="text" id="register_email" name="register_email" class="form-control" placeholder="Email address" 
+              <input type="text" id="register_email" name="register_email" class="form-control" placeholder="Email address"
               value={{ old('register_email')}}>
               @error('register_email')
               <span class="text-danger error_text"> {{ $message }}</span>
@@ -130,7 +130,7 @@
       $(function() {
         var old_gender = $("#register_gender").data("old");
         var old_voter_status = $("#register_voter_status").data("old");
-        
+
         $("#register_gender").val(old_gender);
         $("#register_voter_status").val(old_voter_status);
       })

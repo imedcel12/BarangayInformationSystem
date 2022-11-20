@@ -36,7 +36,7 @@
 
       <div style="margin-top: 2rem;" class="data-row">
           <div class="data-row-1">
-              <h4>BLotter No</h4>
+              <h4>Complaint No</h4>
               <h4>Date Reported</h4>
               <h4>Time Reported</h4>
           </div>

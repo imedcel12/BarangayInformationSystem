@@ -272,25 +272,25 @@
                                     <span class="text-danger error_text manage_account_confirm_password_error"></span>
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-12 pl-0 pr-0  ">
                                  <div class="form-group text-right ">
                                     <button type="submit" id="changepasswordBtn"class="btn btn-success account-button " disabled><b>Change Password</b></button>
-                                    
+
                                  </div>
                               </div>
                            </div>
-                           
+
                         </div>
                      </form>
                      <div class="border-buttom border-bot pl-3 pr-3">
                      </div>
-                     
-                     
+
+
                      <div class="col-sm-12 overflow-auto  pt-2">
-                        
-                        
-                        
+
+
+
                         <table id="manage-account-table" class="bulk_action dataTables_info table resident-table datatable-element resident table-striped jambo_table bulk_action text-center border dataTable no-footer" >
                            <thead>
                               <tr class="headings">
@@ -301,12 +301,12 @@
                                  <th class="column-title">Username</th>
                                  <th class="column-title">Email</th>
                                  <th class="column-title">Type</th>
-                                 
-                                 
+
+
                               </tr>
                            </thead>
                            <tbody>
-                              
+
                            </tbody>
                         </table>
                      </div>
@@ -348,25 +348,25 @@
                                     <span class="text-danger error_text manage_resident_account_confirm_password_error"></span>
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-12 pl-0 pr-0  ">
                                  <div class="form-group text-right ">
                                     <button type="submit" id="resident_changepasswordBtn"class="btn btn-success account-button " disabled><b>Change Password</b></button>
-                                    
+
                                  </div>
                               </div>
                            </div>
-                           
+
                         </div>
                      </form>
                      <div class="border-buttom border-bot pl-3 pr-3">
                      </div>
-                     
-                     
+
+
                      <div class="col-sm-12 overflow-auto  pt-2">
-                        
-                        
-                        
+
+
+
                         <table id="manage-resident-account-table" class="bulk_action dataTables_info table resident-table datatable-element resident table-striped jambo_table bulk_action text-center border dataTable no-footer" >
                            <thead>
                               <tr class="headings">
@@ -379,7 +379,7 @@
                               </tr>
                            </thead>
                            <tbody>
-                              
+
                            </tbody>
                         </table>
                      </div>
@@ -469,7 +469,7 @@
 
             var isFirstname = false;
             showUserInfo(current_id);
-            
+
             //Hide Navlink
             if(user_type == "Encoder"){
             $("#tablink-create-account").hide();
@@ -658,15 +658,15 @@
 
             //Resident Delete
             $('body').on('click', '#residentDeleteBtn', function () {
-               
+
                var id = $(this).data("id");
-               
+
                if(confirm("Are you sure want to delete this account!?"))
                {
                   $.ajax({
                      type: "DELETE",
                      url: "/setting/account/resident_account"+'/'+id,
-                     
+
                      success: function (data) {
                         table.draw();
                         sessionTable.draw();
@@ -677,7 +677,7 @@
                      }
                   });
                }
-               
+
             });
 
             //Create Account
