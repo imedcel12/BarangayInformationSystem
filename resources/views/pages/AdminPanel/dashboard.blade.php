@@ -27,7 +27,7 @@
             </div>
             <div class="col-sm-3 form-group text-center dashboard-box bg-warning">
                 <h5 class="mb-3">Senior Citizen</h5>
-                <h1 class="">{{ $voter ?? '0' }}</h1>
+                <h1 class="">{{ $senior }}</h1>
             </div>
             <div class="col-sm-12 border border-bot ">
             </div>
