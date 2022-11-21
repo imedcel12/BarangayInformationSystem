@@ -20,6 +20,7 @@ class ResidentInfoController extends Controller
 
     public function index(Request $request)
     {
+
         if (!session()->has("user")) {
             return redirect("login");
         }

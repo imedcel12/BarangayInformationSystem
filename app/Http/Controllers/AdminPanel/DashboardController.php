@@ -14,10 +14,12 @@ class DashboardController extends Controller
 {
     public function dashboard()
     {
+
+
         if (!session()->has("user")) {
             return redirect("login");
         }
-        
+
         $brgy_official = brgy_official::all();
         $area_setting = area_setting::all();
         $registered = DB::table('resident_infos')->count();
@@ -28,10 +30,11 @@ class DashboardController extends Controller
             ->where('gender','=','Female')->count();
         $voter = DB::table('resident_infos')
             ->where('voterstatus','=','Yes')->count();
-        
+
+        $senior = DB::table("resident_infos")->where("age" , ">=" ,"60")->count();
 
         return view('pages.AdminPanel.dashboard',['brgy_official'=>$brgy_official,'area_setting'=>$area_setting,
-        'male'=>$male,'female'=>$female,'voter'=>$voter,'registered'=>$registered,'certificate_requests'=>$certificate_requests]);
+        'male'=>$male,'female'=>$female,'voter'=>$voter,'registered'=>$registered,'certificate_requests'=>$certificate_requests,'senior'=>$senior]);
     }
 }
 
