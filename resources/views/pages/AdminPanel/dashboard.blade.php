@@ -3,6 +3,7 @@
     <div class="col-sm-5 text-left ">
         <h1 class="border-bottom border-bot pt-3">Dashboard</h1>
     </div>
+
     <div class="main-wrapper col-sm-12 text-left h-100  pr-0 pl-0 pt-2 text-white">
         <div class="row pl-4 pr-4">
             <div class="col-sm-3 form-group text-center dashboard-box bg-success">

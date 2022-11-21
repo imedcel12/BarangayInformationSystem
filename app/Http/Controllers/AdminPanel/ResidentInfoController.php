@@ -23,7 +23,7 @@ class ResidentInfoController extends Controller
         if (!session()->has("user")) {
             return redirect("login");
         }
-        
+
         $area_setting = area_setting::all();
 
         $resident = resident_info::latest()->get();
@@ -73,10 +73,10 @@ class ResidentInfoController extends Controller
             'mobile'  => 'required',
              'height'  => 'required',
              'weight'  => 'required',
-            'PAG_IBIG'  => 'required',
+            // 'PAG_IBIG'  => 'required',
             'PHILHEALTH'  => 'required',
             'SSS' => 'required',
-            'TIN' => 'required',
+            // 'TIN' => 'required',
             'email' =>   "required|ends_with:@gmail.com,@yahoo.com|unique:accounts,email",
             'spouse' => 'required',
             'father' => 'required',
@@ -108,10 +108,10 @@ class ResidentInfoController extends Controller
         'mobile_no'=>$request->mobile,
         'height'=>$request->height,
         'weight'=>$request->weight,
-        'PAG_IBIG'=>$request->PAG_IBIG,
+        // 'PAG_IBIG'=>$request->PAG_IBIG,s
         'PHILHEALTH'=>$request->PHILHEALTH,
         'SSS'=>$request->SSS,
-        'TIN'=>$request->TIN,
+        // 'TIN'=>$request->TIN,
         'email'=>$request->email,
         'spouse'=>$request->spouse,
         'father'=>$request->father,
