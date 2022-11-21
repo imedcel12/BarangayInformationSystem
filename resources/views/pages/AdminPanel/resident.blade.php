@@ -116,6 +116,46 @@
                                                 <span id="gender_err" class="text-danger error-text gender_err"></span>
                                             </div>
 
+                                            <div class="item form-group border solid "
+                                            style="margin-left: 15px;margin-right: 15px;">
+                                            <label class="col-form-label col-md-3 col-sm-3 label-align"
+                                                for="first-name">4P's member
+                                            </label>
+                                            <div class="col-md-12 col-sm-12 ">
+                                                <input type="radio" id="yes" name="poorPs_member" value="Yes">
+                                                <label for="Yes">Yes</label><br>
+                                                <input type="radio" id="no" name="poorPs_member" value="No">
+                                                <label for="No">No</label><br>
+                                            </div>
+                                            <span id="poorPs_member_err" class="text-danger error-text poorPs_member_err"></span>
+                                        </div>
+
+                                            <div class="item form-group">
+                                                <label class="col-form-label col-md-3 col-sm-3 label-align"
+                                                    for="first-name">Occupation
+                                                </label>
+                                                <div class="col-md-12 col-sm-12 ">
+                                                    <input type="text" id="occupation" name="occupation"
+                                                        required="required" value="" placeholder="N/A"
+                                                        class="form-control ">
+                                                    <span id="occupation"
+                                                        class="text-danger error-text occupation_err"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item form-group">
+                                                <label class="col-form-label col-md-3 col-sm-3 label-align"
+                                                    for="first-name">Educational Attainment
+                                                </label>
+                                                <div class="col-md-12 col-sm-12 ">
+                                                    <input type="text" id="educational_attainment" name="educational_attainment"
+                                                        required="required" value="" placeholder="N/A"
+                                                        class="form-control ">
+                                                    <span id="educational_attainment"
+                                                        class="text-danger error-text educational_attainment_err"></span>
+                                                </div>
+                                            </div>
+
 
 
 
@@ -312,6 +352,8 @@
                                                         class="text-danger error-text mother_err"></span>
                                                 </div>
                                             </div>
+
+                                            
 
 
 
@@ -655,9 +697,7 @@
                                     </div>
                                 </div>
 
-
-
-
+                              
 
 
 

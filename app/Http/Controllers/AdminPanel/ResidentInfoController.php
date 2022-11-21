@@ -85,6 +85,9 @@ class ResidentInfoController extends Controller
             'area' => 'required',
             'address_1' => 'required',
             'address_2' => 'required',
+            'occupation' => 'required',
+            'educational_attainment' => 'required',
+            'poorPs_member' => 'required',
 
         ]);
 
@@ -121,7 +124,12 @@ class ResidentInfoController extends Controller
         'mother'=>$request->mother,
         'area'=>$request->area,
         'address_1'=>$request->address_1,
-        'address_2'=>$request->address_2]);
+        'address_2'=>$request->address_2,
+        'occupation'=>$request->occupation,
+        'educational_attainment'=>$request->educational_attainment,
+        'poorPs_member'=>$request->poorPs_member,
+    
+    ]);
         $data = DB::table('area_settings')
         ->select('area')->get();
 

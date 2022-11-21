@@ -36,6 +36,9 @@ class resident_info extends Model
     'mother',
     'area',
     'address_1',
-    'address_2'];
+    'address_2',
+    'occupation',
+    'educational_attainment',
+    'poorPs_member'];
     public $timestamps = true;
 }
