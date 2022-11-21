@@ -272,7 +272,7 @@ Route::post('insert',function(){
 
         $sql = "INSERT INTO qrcodedb (student_id,time_in) VALUES('$text',NOW())";
         if($conn->query($sql) === true){
-          return redirect()->back();
+          return redirect()->back()->with("status", 'Attendance Successfully Added');
         }else{
             echo "error:" . $sql . "<br />" . $conn->error;
         }

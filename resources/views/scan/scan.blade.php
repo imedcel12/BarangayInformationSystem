@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,9 +13,15 @@
     </script>
     <title>Document</title>
 </head>
-     
+
 <body>
-    <a href="{{url('/dashboard')}}" class="btn btn-primary" style="margin-top: 50px; margin-left: 50px;">Back</a>
+    @if ($message = Session::get('status'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert" style="color:black;">×</button>
+            <strong>{{ $message }}</strong>
+        </div>
+    @endif
+    <a href="{{ url('/dashboard') }}" class="btn btn-primary" style="margin-top: 50px; margin-left: 50px;">Back</a>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
