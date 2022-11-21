@@ -259,8 +259,8 @@ Route::get("/scan", [AttendanceScan::class, 'index']);
 Route::post('insert',function(){
     $server = "localhost";
     $username="root";
-    $password="secret";
-    $dbname="barangay_db";
+    $password="";
+    $dbname="brgy_information_system";
 
     $conn = new mysqli($server,$username,$password,$dbname);
     if($conn->connect_error){
