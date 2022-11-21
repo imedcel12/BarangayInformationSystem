@@ -21,7 +21,9 @@
     <div class="container ">
 
         <table class="table table-striped mt-5 text-center">
-
+            <a class="btn btn-primary mt-2 ml-2 mr-2" style=""
+            href="{{route('download_pdf_attendance')}}"><span class="text-white "
+                style="font-size: 15px;"></span>Download</a>
             <thead style="background-color:gray;">
                 <tr>
                     <th scope="col" style="color:white;">Resident ID</th>

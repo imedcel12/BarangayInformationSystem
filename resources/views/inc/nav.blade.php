@@ -89,7 +89,9 @@
             </div>
 
         </li>
-
+        <a href="/profile_brgy"
+        class="list-group-item list-group-item-action text-dark{{ request()->is('/profile_brgy*') ? 'active-page' : '' }}"><i
+            class="fa fa-address-card fa-lg icon-adjust"></i>Brgy. Profile</a>
     </div>
 </div>
 
