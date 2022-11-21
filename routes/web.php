@@ -259,8 +259,8 @@ Route::get("/scan", [AttendanceScan::class, 'index']);
 Route::post('insert',function(){
     $server = "localhost";
     $username="root";
-    $password="";
-    $dbname="brgy_information_system";
+    $password="secret";
+    $dbname="barangay_db";
 
     $conn = new mysqli($server,$username,$password,$dbname);
     if($conn->connect_error){
@@ -272,7 +272,7 @@ Route::post('insert',function(){
 
         $sql = "INSERT INTO qrcodedb (student_id,time_in) VALUES('$text',NOW())";
         if($conn->query($sql) === true){
-          return redirect()->back();
+          return redirect()->back()->with("status", 'Attendance Successfully Added');
         }else{
             echo "error:" . $sql . "<br />" . $conn->error;
         }
