@@ -283,6 +283,8 @@ Route::post('insert',function(){
 
 
 Route::get('/all-attendance',[AttendanceScan::class,'allRecord']);
+Route::get('delete_attendance/{id}',[AttendanceScan::class,'destroy']);
+
 
 
 

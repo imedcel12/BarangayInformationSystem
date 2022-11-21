@@ -26,6 +26,7 @@
                 <tr>
                     <th scope="col" style="color:white;">Resident ID</th>
                     <th scope="col" style="color:white;">Time in</th>
+                    <th style="color:white;">Delete</th>
                 </tr>
             </thead>
             <tbody class="text-center">
@@ -34,6 +35,9 @@
                     <tr>
                         <td>{{ $attend->student_id }}</td>
                         <td>{{ Carbon\Carbon::parse($attend->time_in)->format(('F d,  Y - g:i A')) }}</td>
+                        <td> <span>
+                            <a href="{{url('delete_attendance/'.$attend->id)}}" class="btn btn-danger btn-sm text-light">Delete</a>
+                        </span></td>
                     </tr>
                 @endforeach
 

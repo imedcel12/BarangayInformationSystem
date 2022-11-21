@@ -17,4 +17,10 @@ class AttendanceScan extends Controller
 
         return view('scan.attendance_list',compact('attendance'));
     }
+
+    public function destroy($id){
+        $attendance = AttendanceModel::find($id);
+        $attendance->delete();
+        return redirect()->back()->with('status', 'Attendance Deleted Successfully!');
+    }
 }
