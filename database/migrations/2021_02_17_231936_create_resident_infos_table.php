@@ -42,6 +42,9 @@ class CreateResidentInfosTable extends Migration
             $table->string('address_1')->nullable();
             $table->string('address_2')->nullable();
             $table->string('date_registered')->nullable();
+            $table->string('occupation')->nullable();
+            $table->string('educational_attainment')->nullable();
+            $table->string('poorPs_member')->nullable();
             $table->timestamps();
         });
     }
