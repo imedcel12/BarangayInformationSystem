@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,8 +14,9 @@
     </script>
     <title>Document</title>
 </head>
-
+     
 <body>
+    <a href="{{url('/dashboard')}}" class="btn btn-primary" style="margin-top: 50px; margin-left: 50px;">Back</a>
     <div class="container">
         <div class="row">
             <div class="col-md-6">

@@ -1,3 +1,9 @@
+@extends('layouts.apps')
+
+
+@section('content')
+    
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,17 +18,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container ">
 
-        <table class="table table-striped">
+        <table class="table table-striped mt-5">
 
-            <thead>
+            <thead style="background-color:gray;">
                 <tr>
-                    <th scope="col">Resident ID</th>
-                    <th scope="col">Time IN</th>
+                    <th scope="col" style="color:white;">Resident ID</th>
+                    <th scope="col" style="color:white;">Time in</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="text-center">
 
                 @foreach ($attendance as $attend)
                     <tr>
@@ -37,3 +43,4 @@
 </body>
 
 </html>
+@endsection
