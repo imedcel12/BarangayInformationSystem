@@ -20,7 +20,7 @@
 <body>
     <div class="container ">
 
-        <table class="table table-striped mt-5">
+        <table class="table table-striped mt-5 text-center">
 
             <thead style="background-color:gray;">
                 <tr>
@@ -33,7 +33,7 @@
                 @foreach ($attendance as $attend)
                     <tr>
                         <td>{{ $attend->student_id }}</td>
-                        <td>{{ $attend->time_in }}</td>
+                        <td>{{ Carbon\Carbon::parse($attend->time_in)->format(('F d,  Y - g:i A')) }}</td>
                     </tr>
                 @endforeach
 
