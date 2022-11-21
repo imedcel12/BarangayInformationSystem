@@ -23,7 +23,7 @@ class ResidentInfoController extends Controller
         if (!session()->has("user")) {
             return redirect("login");
         }
-        
+
         $area_setting = area_setting::all();
 
         $resident = resident_info::latest()->get();
@@ -108,6 +108,8 @@ class ResidentInfoController extends Controller
         'mobile_no'=>$request->mobile,
         'height'=>$request->height,
         'weight'=>$request->weight,
+
+        // 'PAG_IBIG'=>$request->PAG_IBIG,s
         // 'PAG_IBIG'=>$request->PAG_IBIG,
         'PHILHEALTH'=>$request->PHILHEALTH,
         'SSS'=>$request->SSS,

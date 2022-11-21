@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 //Admin Panel
 //Account Login Admin
 use App\Http\Controllers\AdminPanel\Setting\Account\UserController;
+use App\Http\Controllers\AttendanceScan;
 //Dashboard Module
 use App\Http\Controllers\AdminPanel\DashboardController;
 use App\Http\Controllers\AdminPanel\Senior_CitizenController;
@@ -252,16 +253,36 @@ Route::resource("/barangay/blotter", ClientBlotterController::class);
 
 
 
+Route::get("/scan", [AttendanceScan::class, 'index']);
+
+
+Route::post('insert',function(){
+    $server = "localhost";
+    $username="root";
+    $password="secret";
+    $dbname="barangay_db";
+
+    $conn = new mysqli($server,$username,$password,$dbname);
+    if($conn->connect_error){
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    if(isset($_POST['text'])){
+        $text = $_POST['text'];
+
+        $sql = "INSERT INTO qrcodedb (student_id,time_in) VALUES('$text',NOW())";
+        if($conn->query($sql) === true){
+          return redirect()->back();
+        }else{
+            echo "error:" . $sql . "<br />" . $conn->error;
+        }
+    }
+    $conn->close();
+});
 
 
 
-
-
-
-
-
-
-
+Route::get('/all-attendance',[AttendanceScan::class,'allRecord']);
 
 
 

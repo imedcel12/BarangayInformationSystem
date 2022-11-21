@@ -244,10 +244,6 @@
 
 
 
-
-
-
-
                                             <div class="row" style="margin-left: 0px;margin-right: 0px;">
 
                                                 <div class="col-sm-6 ">
@@ -353,7 +349,7 @@
 
 
                                         <!----------------
-                                    -->
+                                            -->
                                     </div>
                                     <div class="ln_solid"></div>
                                     <div class="item form-group">
@@ -730,7 +726,7 @@
 
 
                             <!----------------
-                            -->
+                                    -->
 
 
 
