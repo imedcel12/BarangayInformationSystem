@@ -82,8 +82,9 @@
                                         <span
                                             class="text-danger error_text create_account_form_lastname_error">{{ $message }}</span>
                                     @enderror
-                                    <span class="" style="position: fixed; top: 435px; left: 950px;"><i class=" text-dark" aria-hidden="true" id="eye" onclick="toggle()" style="cursor: default">Show Password</span></i>
+                                   
                             </div>
+                            <span class=""><i class=" text-dark" aria-hidden="true" id="eye" onclick="toggle()" style="cursor: default">Show Password</span></i>
 
                             <button class="btn btn-lg btn-primary btn-block text-uppercase mt-3" id="loginBtn"
                                 type="submit">Log in</button>
