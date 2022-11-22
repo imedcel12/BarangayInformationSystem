@@ -12,7 +12,7 @@
                 <i class="fa fa-search fa-lg icon-adjust">
                 </i>
                 Scan
-                for attendace</a> </li>
+                for attendance</a> </li>
         <li class="list-none"><a href="/all-attendance"
                 class="list-group-item list-group-item-action bg-light text-adjust">
                 <i class="fa fa-list fa-lg icon-adjust">
