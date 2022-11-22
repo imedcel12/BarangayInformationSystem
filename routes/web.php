@@ -7,12 +7,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminPanel\Setting\Account\UserController;
 use App\Http\Controllers\AttendanceScan;
 //Dashboard Module
+use App\Http\Controllers\AdminPanel\ProfilebrgyController;
 use App\Http\Controllers\AdminPanel\DashboardController;
 use App\Http\Controllers\AdminPanel\Senior_CitizenController;
 //Resident Module
 use App\Http\Controllers\AdminPanel\ResidentInfoController;
 //Indigent Module
 use App\Http\Controllers\AdminPanel\CertificateIndigencyController;
+
 //Business Module
 use App\Http\Controllers\AdminPanel\CertificateBusinessController;
 //Unemployment Module
@@ -68,6 +70,7 @@ Route::get('/', [UserController::class, 'login']);
 
 
 //Admin Panel Start
+Route::get('/profile_brgy', [ProfilebrgyController::class, 'index'])->name('profile_brgy');
 
 //Dashboard Module
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
@@ -163,7 +166,7 @@ Route::post("/setting/account/form",[AccountController::class, 'accountSettingCh
     Route::get("/export_certificate_unemployments/{id}", [CertificateUnemploymentController::class, 'downloadFile'])->name('certificate_unemployments');
     Route::get("/export_certificate_unifasts/{id}", [CertificateUnifastController::class, 'downloadFile'])->name('certificate_unifasts');
     Route::get("/export_certificate_job_seekers/{id}", [CertificateJobSeekerController::class, 'downloadFile'])->name('certificate_job_seekers');
-
+    Route::get("/download_pdf_attendance", [AttendanceScan::class, 'downloadFile'])->name('download_pdf_attendance');
       //Certificate Residency
       Route::get("/certificate_residency", [CertificateResidencyController::class, 'index']);
       Route::post("/create_certificate_residencies", [CertificateResidencyController::class, 'store']);

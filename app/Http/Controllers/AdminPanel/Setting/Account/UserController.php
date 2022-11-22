@@ -59,7 +59,7 @@ class UserController extends Controller
             return redirect("client");
         }
         else {
-            return redirect("dashboard");
+            return redirect("profile_brgy");
         }
 
     }
